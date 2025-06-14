@@ -1,0 +1,134 @@
+[
+  {
+    "id": "vid_001",
+    "title": "Building Modern Web Applications with React",
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=480&h=270&fit=crop",
+    "duration": 1247,
+    "views": 128340,
+    "uploadDate": "2024-01-15T10:30:00Z",
+    "channelId": "ch_001",
+    "description": "Learn how to build scalable web applications using React, including hooks, context, and performance optimization techniques.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+  },
+  {
+    "id": "vid_002",
+    "title": "Advanced JavaScript Concepts Explained",
+    "thumbnail": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=480&h=270&fit=crop",
+    "duration": 892,
+    "views": 89234,
+    "uploadDate": "2024-01-12T14:15:00Z",
+    "channelId": "ch_002",
+    "description": "Deep dive into closures, prototypes, async/await, and other advanced JavaScript concepts that every developer should know.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+  },
+  {
+    "id": "vid_003",
+    "title": "CSS Grid Layout Masterclass",
+    "thumbnail": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=480&h=270&fit=crop",
+    "duration": 1456,
+    "views": 67891,
+    "uploadDate": "2024-01-10T09:45:00Z",
+    "channelId": "ch_001",
+    "description": "Master CSS Grid layout with practical examples and real-world projects. From basic concepts to advanced techniques.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+  },
+  {
+    "id": "vid_004",
+    "title": "Node.js Backend Development Guide",
+    "thumbnail": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=480&h=270&fit=crop",
+    "duration": 2034,
+    "views": 156789,
+    "uploadDate": "2024-01-08T16:20:00Z",
+    "channelId": "ch_003",
+    "description": "Complete guide to building robust backend applications with Node.js, Express, and MongoDB.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+  },
+  {
+    "id": "vid_005",
+    "title": "Docker Containerization Tutorial",
+    "thumbnail": "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=480&h=270&fit=crop",
+    "duration": 1789,
+    "views": 93456,
+    "uploadDate": "2024-01-05T11:30:00Z",
+    "channelId": "ch_004",
+    "description": "Learn Docker from scratch - containerize your applications, work with images, volumes, and orchestration.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+  },
+  {
+    "id": "vid_006",
+    "title": "Python Data Science Fundamentals",
+    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=480&h=270&fit=crop",
+    "duration": 2245,
+    "views": 145623,
+    "uploadDate": "2024-01-03T13:45:00Z",
+    "channelId": "ch_005",
+    "description": "Introduction to data science with Python - pandas, numpy, matplotlib, and machine learning basics.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+  },
+  {
+    "id": "vid_007",
+    "title": "Vue.js 3 Composition API Deep Dive",
+    "thumbnail": "https://images.unsplash.com/photo-1619410283995-43d9134e7656?w=480&h=270&fit=crop",
+    "duration": 1567,
+    "views": 78912,
+    "uploadDate": "2024-01-01T08:15:00Z",
+    "channelId": "ch_002",
+    "description": "Explore Vue.js 3 Composition API with practical examples and best practices for modern Vue development.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
+  },
+  {
+    "id": "vid_008",
+    "title": "GraphQL API Development",
+    "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=480&h=270&fit=crop",
+    "duration": 1823,
+    "views": 101234,
+    "uploadDate": "2023-12-28T15:30:00Z",
+    "channelId": "ch_003",
+    "description": "Build efficient APIs with GraphQL - schema design, resolvers, mutations, and real-time subscriptions.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+  },
+  {
+    "id": "vid_009",
+    "title": "Kubernetes Orchestration Basics",
+    "thumbnail": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=480&h=270&fit=crop",
+    "duration": 2156,
+    "views": 87654,
+    "uploadDate": "2023-12-25T12:00:00Z",
+    "channelId": "ch_004",
+    "description": "Learn Kubernetes fundamentals - pods, services, deployments, and cluster management for container orchestration.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+  },
+  {
+    "id": "vid_010",
+    "title": "Machine Learning with TensorFlow",
+    "thumbnail": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=480&h=270&fit=crop",
+    "duration": 2489,
+    "views": 167890,
+    "uploadDate": "2023-12-22T10:45:00Z",
+    "channelId": "ch_005",
+    "description": "Build and train neural networks using TensorFlow - from basic concepts to advanced deep learning models.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+  },
+  {
+    "id": "vid_011",
+    "title": "TypeScript Advanced Patterns",
+    "thumbnail": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=480&h=270&fit=crop",
+    "duration": 1345,
+    "views": 95678,
+    "uploadDate": "2023-12-20T14:20:00Z",
+    "channelId": "ch_001",
+    "description": "Master advanced TypeScript patterns - generics, conditional types, mapped types, and utility types.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"
+  },
+  {
+    "id": "vid_012",
+    "title": "MongoDB Database Design",
+    "thumbnail": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=480&h=270&fit=crop",
+    "duration": 1678,
+    "views": 76543,
+    "uploadDate": "2023-12-18T09:30:00Z",
+    "channelId": "ch_003",
+    "description": "Design efficient MongoDB databases - schema patterns, indexing strategies, and performance optimization.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
+  }
+]
