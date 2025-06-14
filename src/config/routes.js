@@ -3,7 +3,7 @@ import Watch from '@/components/pages/Watch';
 import Search from '@/components/pages/Search';
 import History from '@/components/pages/History';
 import Channel from '@/components/pages/Channel';
-
+import Settings from '@/components/pages/Settings';
 export const routes = {
   home: {
     id: 'home',
@@ -34,13 +34,20 @@ export const routes = {
     icon: 'History',
     component: History
   },
-  channel: {
+channel: {
     id: 'channel',
     label: 'Channel',
     path: '/channel/:channelId',
     icon: 'User',
     component: Channel,
     hideInNav: true
+  },
+  settings: {
+    id: 'settings',
+    label: 'Settings',
+    path: '/settings',
+    icon: 'Settings',
+    component: Settings
   }
 };
 

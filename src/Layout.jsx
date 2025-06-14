@@ -4,8 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ApperIcon from '@/components/ApperIcon';
 import Header from '@/components/organisms/Header';
 import { routes } from '@/config/routes';
+import { ThemeProvider } from '@/contexts/ThemeContext';
 
-const Layout = () => {
+const LayoutContent = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
@@ -14,13 +15,13 @@ const Layout = () => {
   const isWatchPage = location.pathname.startsWith('/watch');
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden bg-background text-white">
+    <div className="h-screen flex flex-col overflow-hidden bg-background dark:bg-background light:bg-background-light text-text-primary dark:text-text-primary light:text-text-primary-light">
       {/* Header */}
       <Header onMobileMenuToggle={() => setIsMobileMenuOpen(!isMobileMenuOpen)} />
       
       <div className="flex-1 flex overflow-hidden">
         {/* Desktop Sidebar */}
-        <aside className={`w-64 bg-secondary border-r border-surface flex-shrink-0 overflow-y-auto z-40 ${isWatchPage ? 'hidden lg:block' : 'hidden md:block'}`}>
+<aside className={`w-64 bg-secondary dark:bg-secondary light:bg-secondary-light border-r border-surface dark:border-surface light:border-gray-200 flex-shrink-0 overflow-y-auto z-40 ${isWatchPage ? 'hidden lg:block' : 'hidden md:block'}`}>
           <nav className="p-4">
             <div className="space-y-2">
               {navigationItems.map((item) => (
@@ -44,7 +45,7 @@ const Layout = () => {
         </aside>
 
         {/* Mobile Bottom Navigation */}
-        <div className={`md:hidden fixed bottom-0 left-0 right-0 bg-secondary border-t border-surface z-50 ${isWatchPage ? 'hidden' : 'block'}`}>
+<div className={`md:hidden fixed bottom-0 left-0 right-0 bg-secondary dark:bg-secondary light:bg-secondary-light border-t border-surface dark:border-surface light:border-gray-200 z-50 ${isWatchPage ? 'hidden' : 'block'}`}>
           <div className="flex justify-around py-2">
             {navigationItems.slice(0, 4).map((item) => (
               <NavLink
@@ -79,7 +80,7 @@ const Layout = () => {
                 animate={{ x: 0 }}
                 exit={{ x: -280 }}
                 transition={{ type: 'tween', duration: 0.3 }}
-                className="fixed left-0 top-0 bottom-0 w-64 bg-secondary border-r border-surface z-50 overflow-y-auto md:hidden"
+className="fixed left-0 top-0 bottom-0 w-64 bg-secondary dark:bg-secondary light:bg-secondary-light border-r border-surface dark:border-surface light:border-gray-200 z-50 overflow-y-auto md:hidden"
               >
                 <div className="p-4">
                   <div className="flex items-center justify-between mb-6">
@@ -132,7 +133,15 @@ const Layout = () => {
           </motion.div>
         </main>
       </div>
-    </div>
+</div>
+  );
+};
+
+const Layout = () => {
+  return (
+    <ThemeProvider>
+      <LayoutContent />
+    </ThemeProvider>
   );
 };
 

@@ -2,8 +2,11 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { routes, routeArray } from '@/config/routes';
 import Layout from '@/Layout';
+import { useTheme } from '@/contexts/ThemeContext';
 
-function App() {
+const AppContent = () => {
+  const { resolvedTheme } = useTheme();
+  
   return (
     <BrowserRouter>
       <div className="h-screen overflow-hidden">
@@ -30,12 +33,18 @@ function App() {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          theme="dark"
+theme={resolvedTheme}
           className="z-[9999]"
           style={{ zIndex: 9999 }}
         />
       </div>
     </BrowserRouter>
+  );
+};
+
+function App() {
+  return (
+    <AppContent />
   );
 }
 
