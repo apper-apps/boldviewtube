@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import { Outlet, NavLink, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import ApperIcon from '@/components/ApperIcon';
-import Header from '@/components/organisms/Header';
-import { routes } from '@/config/routes';
-import { ThemeProvider } from '@/contexts/ThemeContext';
+import { useState } from 'react'
+import { Outlet, NavLink, useLocation } from 'react-router-dom'
+import { motion, AnimatePresence } from 'framer-motion'
+import ApperIcon from '@/components/ApperIcon'
+import Header from '@/components/organisms/Header'
+import { routes } from '@/config/routes'
+import { ThemeProvider } from '@/context/ThemeContext'
 
-const LayoutContent = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
+function LayoutContent() {
+  const location = useLocation()
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navigationItems = Object.values(routes).filter(route => !route.hideInNav);
 

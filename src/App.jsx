@@ -1,14 +1,17 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
-import { routes, routeArray } from '@/config/routes';
-import Layout from '@/Layout';
-import { useTheme } from '@/contexts/ThemeContext';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import Layout from '@/Layout'
+import { ThemeProvider } from '@/contexts/ThemeContext'
+import { ToastContainer } from 'react-toastify'
+import { routeArray } from '@/routes'
+import { useTheme } from '@/contexts/ThemeContext'
+import 'react-toastify/dist/ReactToastify.css'
+import '@/index.css'
 
-const AppContent = () => {
-  const { resolvedTheme } = useTheme();
+function AppContent() {
+  const { resolvedTheme } = useTheme()
   
   return (
-    <BrowserRouter>
+    <Router>
       <div className="h-screen overflow-hidden">
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -33,19 +36,21 @@ const AppContent = () => {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-theme={resolvedTheme}
+          theme={resolvedTheme}
           className="z-[9999]"
           style={{ zIndex: 9999 }}
         />
       </div>
-    </BrowserRouter>
-  );
-};
+    </Router>
+  )
+}
 
 function App() {
   return (
-    <AppContent />
-  );
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
+  )
 }
 
-export default App;
+export default App
