@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import ApperIcon from '@/components/ApperIcon'
 import Header from '@/components/organisms/Header'
 import { routes } from '@/config/routes'
-import { ThemeProvider } from '@/context/ThemeContext'
+import { ThemeProvider } from '@/contexts/ThemeContext'
 
 function LayoutContent() {
   const location = useLocation()
